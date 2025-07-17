@@ -32,7 +32,7 @@ From the paper:
 >complexity of $O(m)$:
 >```math
 >\begin{aligned}
->L-Mul(x, y) &= (1 + x_m + y_m + 2^{-l(m)}) * 2^{x_e + y_e}, \\
+>\mathcal{L}\text{-Mul}(x, y) &= (1 + x_m + y_m + 2^{-l(m)}) * 2^{x_e + y_e} \\
 >l(m) &= \begin{cases}
 >    m & m \leq 3 \\
 >    3 & m = 4 \\
@@ -41,7 +41,8 @@ From the paper:
 >\end{aligned}
 >```
 
-The key difference is the replacement of the $x_m \cdot y_m$ term
+As stated in the paper,
+the key difference is the replacement of the $x_m \cdot y_m$ term
 in the traditional FP multiplication algorithm
 with $2^{-l(m)}$ in $\mathcal{L}$-Mul.
 
