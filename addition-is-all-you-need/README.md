@@ -42,5 +42,6 @@ From the paper:
 >$$
 
 The key difference is the replacement of the $x_m \cdot y_m$ term
-with $2^{-l(m)}$.
+in the traditional FP multiplication algorithm
+with $2^{-l(m)}$ in $\mathcal{L}$-Mul.
 
