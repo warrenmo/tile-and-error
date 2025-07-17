@@ -4,14 +4,14 @@ An exploration of the paper [Addition is All You Need for Energy-efficient Langu
 
 ## Overview of the paper
 
-The paper proposes the $\mathcal{L}$-Mul floating point (FP) multiplication algorithm
+The paper proposes the $\cal{L}$-Mul floating point (FP) multiplication algorithm
 with $O(n)$ complexity, where $n$ is the number of set bits.
 
 By contrast, the traditional FP multiplication algorithm has
 $O(m^2)$ complexity, where $m$ is the number of bits
 used to represent the mantissas of the operands.
 
-### $\mathcal{L}$-Mul
+### $\cal{L}$-Mul
 
 From the paper:
 >Consider two floating point numbers $x$ and $y$,
@@ -32,7 +32,7 @@ From the paper:
 >complexity of $O(m)$:
 >```math
 >\begin{aligned}
->\mathcal{L}\text{-Mul}(x, y) &= (1 + x_m + y_m + 2^{-l(m)}) * 2^{x_e + y_e} \\
+>\cal{L}\text{-Mul}(x, y) &= (1 + x_m + y_m + 2^{-l(m)}) * 2^{x_e + y_e} \\
 >l(m) &= \begin{cases}
 >    m & m \leq 3 \\
 >    3 & m = 4 \\
@@ -44,5 +44,5 @@ From the paper:
 As stated in the paper,
 the key difference is the replacement of the $x_m \cdot y_m$ term
 in the traditional FP multiplication algorithm
-with $2^{-l(m)}$ in $\mathcal{L}$-Mul.
+with $2^{-l(m)}$ in $\cal{L}$-Mul.
 
