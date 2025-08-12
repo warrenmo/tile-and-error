@@ -1,0 +1,3 @@
+[submodule "Thunderkittens"]
+	path = Thunderkittens
+	url = https://github.com/HazyResearch/ThunderKittens
